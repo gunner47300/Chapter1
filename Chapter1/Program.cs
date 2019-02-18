@@ -31,8 +31,9 @@ namespace Chapter1
                     j++;
                 }
             }
-            int age=int.Parse(Console.ReadLine());
-            Console.WriteLine("Za 10 lat będziesz mieć {0} lat", age);
+
+            DateTime age = new DateTime((int.Parse(Console.ReadLine())), 1, 1);
+            Console.WriteLine("Za 10 lat będziesz mieć {0} lat", (age.AddYears(10)).Year);
         }
     }
 }
